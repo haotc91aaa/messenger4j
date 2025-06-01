@@ -24,9 +24,9 @@ public class Application {
     public Messenger messenger(@Value("${messenger4j.pageAccessToken}") String pageAccessToken,
                                @Value("${messenger4j.appSecret}") String appSecret,
                                @Value("${messenger4j.verifyToken}") String verifyToken) {
-        pageAccessToken = AppCfg.getProperty("messenger4j_pageAccessToken");
+       /* pageAccessToken = AppCfg.getProperty("messenger4j_pageAccessToken");
         appSecret = AppCfg.getProperty("messenger4j_appSecret");
-        verifyToken = AppCfg.getProperty("messenger4j_verifyToken");
+        verifyToken = AppCfg.getProperty("messenger4j_verifyToken");*/
 
         return Messenger.create(pageAccessToken, appSecret, verifyToken);
     }
