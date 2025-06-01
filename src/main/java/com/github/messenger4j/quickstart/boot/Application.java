@@ -20,9 +20,9 @@ import org.springframework.context.annotation.Bean;
 public class Application {
 
     @Bean
-    public Messenger messenger(@Value("${messenger4j.pageAccessToken}") String pageAccessToken,
-                               @Value("${messenger4j.appSecret}") String appSecret,
-                               @Value("${messenger4j.verifyToken}") String verifyToken) {
+    public Messenger messenger(@Value("${MESSENGER_PAGE_ACCESS_TOKEN}") String pageAccessToken,
+                               @Value("${MESSENGER_APP_SECRET}") String appSecret,
+                               @Value("${MESSENGER_VERIFY_TOKEN}") String verifyToken) {
        /* pageAccessToken = AppCfg.getProperty("messenger4j_pageAccessToken");
         appSecret = AppCfg.getProperty("messenger4j_appSecret");
         verifyToken = AppCfg.getProperty("messenger4j_verifyToken");*/
