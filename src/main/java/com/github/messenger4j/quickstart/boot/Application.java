@@ -1,7 +1,6 @@
 package com.github.messenger4j.quickstart.boot;
 
 import com.github.messenger4j.Messenger;
-import com.github.messenger4j.quickstart.boot.config.AppCfg;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
